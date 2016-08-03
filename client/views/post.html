@@ -1,0 +1,21 @@
+<div class="container" ng-if="topic">
+  <div class="row">
+    <div class="col s12 grey-text text-darken-2">
+
+      <h3>{{ topic.title }}</h3>
+
+    </div>
+
+    <div class="col s12" ng-repeat="post in topic.posts">
+
+      <div class="card grey darken-3">
+        <div class="card-content white-text">
+          <span class="card-title">@{{ post.person.fullname }}</span>
+          <div ng-bind-html="post.content"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

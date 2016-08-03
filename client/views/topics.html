@@ -1,0 +1,42 @@
+<div class="container">
+
+  <div class="row">
+
+    <mg-topic 
+      class="col s12"
+      ng-repeat="topic in topics | orderBy: '-createdOn'"
+      ng-click="goToPost(topic.id)"
+      topic="topic">
+    </mg-topic>
+  </div>
+
+  <a
+    class="btn-floating btn-large waves-effect waves-light red modal-trigger"
+    ng-click="openNewTopicModal()">
+
+    <i class="material-icons">add</i>
+  </a>
+</div>
+
+<!-- Modal Structure -->
+<div id="NewTopic" class="modal">
+  <form name="submitTopic" ng-submit="createNewTopic()">
+    <div class="modal-content">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="title" type="text" ng-model="topic.title" pattern=".{3,100}" class="validate" required>
+          <label for="title">Title</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea ng-model="post.content" redactor></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+      <button class="waves-effect waves-green btn-flat">New Topic</button>
+    </div>
+  </form>
+</div>
