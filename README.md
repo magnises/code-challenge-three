@@ -9,7 +9,7 @@ An intern of our created a web forum project a while back. We would like to use 
 
 _(You don't need to touch /services and /redactor folders)_
 
-_(Don't worry about finishing functionality. Just start building those web components!)_
+_(Don't worry about finishing any functionality for the app as a whole. The before and after should look almost identical in a web browser, but the code should be much easier to manage and read)_
 
 _(Login creds are inside the server/boot project files)_
 
