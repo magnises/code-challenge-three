@@ -8,7 +8,9 @@ _Est time: ~55min_
 An intern of our created a web forum project a while back. We would like to use it now, but it currently doesn't meet our angular code standards. __Fork__, and start refactoring the application based on [the angular style guide we use](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md), creating web-components for each UI element in the directives folder. If you'd like an example, look at the topic.directive.js inside said folder.
 
 _(You don't need to touch /services and /redactor folders)_
+
 _(Don't worry about finishing functionality. Just start building those web components!)_
+
 _(Login creds are inside the server/boot project files)_
 
 After your done, submit a __rebased__ pull request.
